@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.d1{
+	text-align: center;
+	}
+</style>
+<meta charset="UTF-8">
+<title>회원가입 페이지</title>
+</head>
+<body>
+	<div class="d1">
+		<h1>회원가입</h1>
+		<div>
+			<form action="">
+			<div class="formlist">
+				<div>
+					<input type="text" name="user-id" placeholder="아이디" required>
+				</div>
+				<div>
+					<input type="password" name="user-password" placeholder="비밀번호">
+				</div>
+				<div>
+					<input type="email" name="user-email" placeholder="[선택]이메일주소 (비밀번호 찾기 등 본인 확인용)">
+				</div>
+				<div>
+					<input type="text" name="user-name" placeholder="이름">
+				</div>
+				<div>
+					<input type="text" name="user-birth" placeholder="생년월일 8자리">
+				</div>
+				
+				<div>
+					<select name="phonemajor">
+						<option value="" selected>통신사 선택</option>
+						<option value="SKT">SKT</option>
+						<option value="KT">KT</option>
+						<option value="LG">LG</option>
+						<option value="SKT-light">STK 알뜰폰</option>
+						<option value="KT-light">KT 알뜰폰</option>
+						<option value="LG-light">LG 알뜰폰</option>
+					</select>
+				</div>
+			</div>
+			<!-- 	<div class = item_telcom id="btn_telcom">
+					<button type="button" id="btn_telecom" class="btn_telecom"
+					aria-expanded="false" aria-controls="telecom_menu">
+					<span class="placeholder">통신사 선택</span>
+					</button>
+					<ul role="menu" id="telecom_menu" class="telecom_menu">
+  						<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom1">
+  						<span class="text">SKT</span>
+  						</button> 
+  					 	</li>
+  					 	<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom2">
+  						<span class="text">KT</span>
+  						</button> 
+  					 	</li>
+  					 	<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom3">
+  						<span class="text">LG</span>
+  						</button> 
+  					 	</li>
+  					 	<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom4">
+  						<span class="text">SKT알뜰폰</span>
+  						</button> 
+  					 	</li>
+  					 	<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom5">
+  						<span class="text">KT알뜰폰</span>
+  						</button> 
+  					 	</li>
+  					 	<li role="presentaion" class="item">
+  						<button type="button" role="menuitem" class="button" id="btnTelecom6">
+  						<span class="text">LG 알뜰폰</span>
+  						</button> 
+  					 	</li>
+					</ul>
+				</div> -->
+				
+				<div class="formlist">
+				<ul class="adult_list">
+  					<li class="radio_item">
+  						<input type="radio" id="gender1" name="gender" value="M" class="blind">
+  						<label for="gender1">남자</label>
+  					</li>
+ 					<li class="radio_item">
+ 						<input type="radio" id="gender2" name="gender" value="W" class="blind">
+  						<label for="gender2">여자</label>
+ 					</li>
+				</ul>
+				<ul class="adult_list">
+  					<li class="radio_item">
+  						<input type="radio" id="foreigner1" name="foreigner" value="K" class="blind">
+  						<label for="foreigner1">내국인</label>
+  					</li>
+ 					<li class="radio_item">
+ 						<input type="radio" id="foreigner2" name="foreigner" value="K" class="blind">
+  						<label for="foreigner2">외국인</label>
+ 					</li>
+				</ul>
+				</div>
+					<input type="tell" name="user-phone" placeholder="휴대폰전화번호">
+			</form>
+		</div>
+	</div>
+	
+	<div class="d1">
+	<div class="form_list" id="divTern">
+		<div class="form_item check_box" id="itemAgree">
+			<div class="title_area">
+				<div class="check_circle">
+					<input type="checkbox" id="agree_all" class="blind">
+					<label for= "agree_all">
+						<em class="option point">[필수]</em>
+						<span class="text">인증 약관 전체동의</span>
+					</label> 
+				</div>
+				<button type="button" class="btn_expand" aria-expanded='false'>
+					<span class="blind">약관 목록</span>	
+				</button>
+			</div>
+<!-- 			<ul class="check_list">
+			  	<li class="item"> 약관 내용 </li>
+			  	<li class="item"> 약관 내용 </li>
+			  	<li class="item"> 약관 내용 </li>
+			  	<li class="item"> 약관 내용 </li>
+			  	<li class="item"> 약관 내용 </li>			  	
+			</ul> -->
+		</div>
+	</div>
+	<div style="margin-top: 50px;" class="btn_submit_wrap" id="divBtnAuth">
+		<button type="button" class="btn_submit" id="btnsend">
+		인증요청
+		</button>
+	</div>
+	</div>
+	
+	<!--------------------------------------------------------------------------  -->
+	
+<!-- 	<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://nid.naver.com/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>네이버 : 회원가입</title>
+    </head>
+    <body>
+        <div id="main">
+            <div>
+                <div><img width="120px" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIkAAr%2Fbtrf3tNd50h%2F9Vc8KO7KaECXopAkwKDGw0%2Fimg.png"></div>
+                <div>
+                    <div style="display: flex;">
+                        <p>실명 인증된 아이디로 가입</p>
+                        <label>
+                            <input type="radio">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form action="">
+                    <div>
+                        <div>
+                            <div><img src=""></div>
+                            <div><input type="text"></div>
+                            <div><span></span></div>
+                        </div>
+                        <div>
+                            <div><img src=""></div>
+                            <div><input type="text"></div>
+                            <div><span></span></div>
+                        </div>
+                        <div>
+                            <div><img src=""></div>
+                            <div><input type="text"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div><img src=""></div>
+                            <div><input type="text"></div>
+                        </div>
+                        <div>
+                            <div><img src=""></div>
+                            <div><input type="text"></div>
+                        </div>
+                        <div>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div>
+                            <div>
+                                <div><input type="radio">남자</div>
+                                <div><input type="radio">여자</div>
+                            </div>
+                            <div>
+                                <div><input type="radio">내국인</div>
+                                <div><input type="radio">외국인</div>
+                            </div>
+                            <div>
+                                <div><img src=""></div>
+                                <div><input type="text"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div><input type="checkbox" name="" id=""></div>
+                                <div>
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                        <p></p>
+                                        <div>
+                                            <a href="https://nid.naver.com/user2/common/terms/terms2?t=viewPersonalInfoTerms&v=1">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                        <p></p>
+                                        <div>
+                                            <a href="https://nid.naver.com/user2/common/terms/terms2?t=viewPersonalInfoTerms&v=1">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                        <p></p>
+                                        <div>
+                                            <a href="https://nid.naver.com/user2/common/terms/terms2?t=viewPersonalInfoTerms&v=1">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                        <p></p>
+                                        <div>
+                                            <a href="https://nid.naver.com/user2/common/terms/terms2?t=viewPersonalInfoTerms&v=1">&gt;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="" id="">
+                                        <p></p>
+                                        <div>
+                                            <a href="https://nid.naver.com/user2/common/terms/terms2?t=viewPersonalInfoTerms&v=1">&gt;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button>인증요청</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </body>
+</html> -->
+	
+</body>
+</html>

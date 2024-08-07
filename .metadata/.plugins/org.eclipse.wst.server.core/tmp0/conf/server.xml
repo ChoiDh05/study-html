@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\day01\src\main\webapp" path="/day01" reloadable="true" source="org.eclipse.jst.jee.server:day01"><Resources><PreResources base="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\day01\build\classes" classLoaderOnly="false" className="org.apache.catalina.webresources.DirResourceSet" internalPath="/" webAppMount="/WEB-INF/classes"/></Resources></Context></Host>
+      <Context docBase="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\home-task\src\main\webapp" path="/home" reloadable="true" source="org.eclipse.jst.jee.server:home-task"><Resources><PreResources base="C:\Users\DH\Desktop\gb_0900_chd\html\workspace\home-task\build\classes" classLoaderOnly="false" className="org.apache.catalina.webresources.DirResourceSet" internalPath="/" webAppMount="/WEB-INF/classes"/></Resources></Context></Host>
     </Engine>
   </Service>
 </Server>
